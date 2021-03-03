@@ -39,7 +39,7 @@ public class UserManager {
     //Login
     public String login(String cedula, String password) {
     	String newPassword = ph.hashPassword(password);
-    	String[] obj = {cedula, password};
+    	String[] obj = {cedula, newPassword};
 		String message = "";
     	
 		try {
